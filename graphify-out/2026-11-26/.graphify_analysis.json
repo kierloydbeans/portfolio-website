@@ -1,0 +1,98 @@
+{
+  "communities": {
+    "0": [
+      "frontend_static_js_app",
+      "frontend_static_js_app_copytext",
+      "frontend_static_js_app_escapehtml",
+      "frontend_static_js_app_loadprofile",
+      "frontend_static_js_app_renderprofile",
+      "frontend_static_js_app_setupinteractions",
+      "frontend_static_js_app_showtoast",
+      "frontend_static_js_app_state"
+    ],
+    "1": [
+      "render",
+      "render_services",
+      "render_services_buildcommand",
+      "render_services_healthcheckpath",
+      "render_services_name",
+      "render_services_runtime",
+      "render_services_startcommand",
+      "render_services_type"
+    ],
+    "2": [
+      "backend_app",
+      "backend_app_health",
+      "backend_app_index",
+      "backend_app_profile",
+      "flask",
+      "get",
+      "os"
+    ]
+  },
+  "cohesion": {
+    "0": 0.35714285714285715,
+    "1": 0.25,
+    "2": 0.38095238095238093
+  },
+  "gods": [
+    {
+      "id": "render_services",
+      "label": "services",
+      "degree": 7
+    },
+    {
+      "id": "frontend_static_js_app_copytext",
+      "label": "copyText()",
+      "degree": 3
+    },
+    {
+      "id": "frontend_static_js_app_escapehtml",
+      "label": "escapeHTML()",
+      "degree": 2
+    },
+    {
+      "id": "frontend_static_js_app_renderprofile",
+      "label": "renderProfile()",
+      "degree": 2
+    },
+    {
+      "id": "frontend_static_js_app_setupinteractions",
+      "label": "setupInteractions()",
+      "degree": 2
+    },
+    {
+      "id": "frontend_static_js_app_showtoast",
+      "label": "showToast()",
+      "degree": 2
+    },
+    {
+      "id": "backend_app_health",
+      "label": "health()",
+      "degree": 2
+    },
+    {
+      "id": "backend_app_index",
+      "label": "index()",
+      "degree": 2
+    },
+    {
+      "id": "backend_app_profile",
+      "label": "profile()",
+      "degree": 2
+    },
+    {
+      "id": "frontend_static_js_app_state",
+      "label": "state",
+      "degree": 1
+    }
+  ],
+  "surprises": [],
+  "questions": [
+    {
+      "type": "no_signal",
+      "question": null,
+      "why": "Not enough signal to generate questions. This usually means the corpus has no AMBIGUOUS edges, no bridge nodes, no INFERRED relationships, and all communities are tightly cohesive. Add more files or run with --mode deep to extract richer edges."
+    }
+  ]
+}

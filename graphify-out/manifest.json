@@ -1,0 +1,62 @@
+{
+  "backend/app.py": {
+    "mtime": 1795625411.376744,
+    "seen": 1795629189.4364655,
+    "ast_hash": "cc99f89a5c254a1c00f24a590d9e611b",
+    "semantic_hash": ""
+  },
+  "frontend/static/js/app.js": {
+    "mtime": 1795626553.5746953,
+    "seen": 1795629189.4364655,
+    "ast_hash": "f23a3b30c452883866e519a1eaa36160",
+    "semantic_hash": ""
+  },
+  "render.yaml": {
+    "mtime": 1795622583.1146955,
+    "seen": 1795623388.3198571,
+    "ast_hash": "1b3ac00a21b77c3f358b3e5d0a7f480f",
+    "semantic_hash": "1b3ac00a21b77c3f358b3e5d0a7f480f"
+  },
+  "skills-lock.json": {
+    "mtime": 1795623764.3678942,
+    "seen": 1795624387.726528,
+    "ast_hash": "407f71e31c1d8a2dd72b3e42371fe9e5",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1795629145.3663166,
+    "seen": 1795629189.4364655,
+    "ast_hash": "7990942acefb33cfe8884d9c91ff26b5",
+    "semantic_hash": ""
+  },
+  "frontend/templates/index.html": {
+    "mtime": 1795629316.8414512,
+    "seen": 1795629339.964576,
+    "ast_hash": "12b23d918791e1479c8e803ee7404426",
+    "semantic_hash": ""
+  },
+  "markdown/index.md": {
+    "mtime": 1795622128.372097,
+    "seen": 1795624387.7288244,
+    "ast_hash": "fd769a625989a6b2f31b2f32a47ba84a",
+    "semantic_hash": ""
+  },
+  "requirements.txt": {
+    "mtime": 1795622188.28845,
+    "seen": 1795624387.729545,
+    "ast_hash": "df90a80fa8637947b81e8baa2145b88c",
+    "semantic_hash": ""
+  },
+  "frontend/static/images/portfolio-qr.svg": {
+    "mtime": 1795622570.2261007,
+    "seen": 1795624387.729545,
+    "ast_hash": "46b4dc57de2cc2eb2f9a6a10c2fa02d9",
+    "semantic_hash": ""
+  },
+  "frontend/static/images/kier-hero-image.png": {
+    "mtime": 1795626336.0122087,
+    "seen": 1795629189.4364655,
+    "ast_hash": "e96bbe80990950146f96aa0bc05dbf7e",
+    "semantic_hash": ""
+  }
+}

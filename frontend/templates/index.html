@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Portfolio of Kierloyd Vince V. Schofield, BS Information Systems student specializing in backend systems, spatial routing, networking, and live AV operations.">
+  <title>Kierloyd Schofield | Portfolio & Resume</title>
+  <script>
+    try {
+      const savedTheme = localStorage.getItem("portfolio-theme");
+      if (savedTheme === "dark" || savedTheme === "light") {
+        document.documentElement.dataset.theme = savedTheme;
+        document.querySelector('meta[name="color-scheme"]').content = savedTheme;
+      }
+    } catch {}
+  </script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <nav class="nav" aria-label="Primary navigation">
+    <a class="nav__brand" href="#top">KS<span>.</span></a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle navigation">☰</button>
+    <div class="nav__links" id="primary-navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+    </div>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark theme" aria-pressed="false">
+      <span class="theme-toggle__icon">◐</span>
+      <span class="theme-toggle__label">Theme</span>
+    </button>
+  </nav>
+
+  <main id="top">
+    <section class="hero section" aria-labelledby="hero-name">
+      <div class="hero__copy">
+        <p class="hero__note">I’m Kierloyd</p>
+        <h1 id="hero-name">Kierloyd<br><span>Schofield</span></h1>
+        <p class="hero__script">Building systems that connect people and places.</p>
+        <div class="hero__traits" aria-label="Professional traits">
+          <p><span>01</span> Backend systems, spatial routing, and practical software.</p>
+          <p><span>02</span> Technical operations and live event support.</p>
+          <p><span>03</span> Calm coordination under real-world deadlines.</p>
+        </div>
+        <div class="hero__actions">
+          <button class="button button--primary print-button" type="button">Print / Save Resume</button>
+          <a class="button button--ghost" href="#experience">Explore Work</a>
+        </div>
+      </div>
+      <aside class="hero__portrait" aria-label="Portrait of Kierloyd Vince V. Schofield">
+        <img src="{{ url_for('static', filename='images/kier-hero-image.png') }}" alt="Portrait of Kierloyd Vince V. Schofield">
+        <div class="hero__portrait-label">
+          <span>BSIS Student</span>
+          <strong>Caloocan City</strong>
+        </div>
+        <button class="portrait-contact copy-contact" type="button" data-copy="email">Email Kierloyd</button>
+      </aside>
+    </section>
+
+    <section class="resume-sheet" id="resume" aria-label="Printable resume">
+      <header class="resume-header">
+        <div>
+          <h2></h2>
+          <p class="resume-headline"></p>
+          <p class="resume-contact"></p>
+          <a class="resume-url" href="https://kierloydschofield-portfolio.onrender.com">kierloydschofield-portfolio.onrender.com</a>
+        </div>
+        <img class="resume-qr" src="{{ url_for('static', filename='images/portfolio-qr.svg') }}" alt="QR code for the portfolio website">
+      </header>
+      <div class="resume-grid">
+        <div class="resume-main">
+          <section>
+            <h3>Profile</h3>
+            <p class="resume-summary"></p>
+          </section>
+          <section>
+            <h3>Experience</h3>
+            <div class="resume-experience"></div>
+          </section>
+          <section>
+            <h3>Selected Projects</h3>
+            <div class="resume-projects"></div>
+          </section>
+        </div>
+        <aside class="resume-sidebar">
+          <section>
+            <h3>Education</h3>
+            <div class="resume-education"></div>
+          </section>
+          <section>
+            <h3>Skills</h3>
+            <div class="resume-skills"></div>
+          </section>
+          <section class="resume-reference">
+            <h3>Character Reference</h3>
+            <p class="reference-name"></p>
+            <p class="reference-title"></p>
+            <button class="reference-toggle" type="button" aria-expanded="false">Show contact details</button>
+            <p class="reference-contact" hidden>Contact details available upon request</p>
+          </section>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="about-layout">
+        <div class="section-heading">
+          <p class="eyebrow">01 / Profile</p>
+          <h2>Building reliable systems and live operations.</h2>
+        </div>
+        <div class="about-card">
+          <p class="about-summary"></p>
+          <div class="about-meta" aria-label="Professional highlights">
+            <div><strong>2027</strong><span>Expected graduation</span></div>
+            <div><strong>400+</strong><span>Practicum hours</span></div>
+            <div><strong>3</strong><span>Technical disciplines</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading section-heading--row projects-heading">
+        <div>
+          <p class="eyebrow">02 / Projects</p>
+          <h2 id="projects-title">Built for the real world.</h2>
+        </div>
+        <p class="projects-intro">A look at live and in-progress projects shaped by systems thinking, research, and thoughtful design.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-preview">
+            <iframe
+              src="https://resq-route-kier.onrender.com"
+              title="Live preview of RESQ-ROUTE"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            ></iframe>
+            <a class="preview-open" href="https://resq-route-kier.onrender.com" target="_blank" rel="noopener noreferrer" aria-label="Open RESQ-ROUTE in a new tab">↗</a>
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><span>Capstone / 2026–Present</span><span class="project-index">01</span></div>
+            <h3>RESQ-ROUTE</h3>
+            <p>A disaster response and evacuation logistics platform with hazard-aware routing, mapping, and resource coordination.</p>
+            <p class="project-stack">Python · FastAPI · PostgreSQL/PostGIS · Maps &amp; Routing</p>
+            <aside class="project-dependency">
+              <span class="dependency-indicator" aria-hidden="true"></span>
+              <p><strong>Realtime backend dependency</strong><br>WebSocket and live features require the API service to be awake.</p>
+              <a href="https://resq-route-api-kier.onrender.com/" target="_blank" rel="noopener noreferrer">Open API service ↗</a>
+            </aside>
+            <a class="project-link" href="https://resq-route-kier.onrender.com" target="_blank" rel="noopener noreferrer">Visit live project <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-preview project-preview--rizal">
+            <iframe
+              src="https://rizals-life.onrender.com"
+              title="Live preview of Rizal's Footsteps"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            ></iframe>
+            <a class="preview-open" href="https://rizals-life.onrender.com" target="_blank" rel="noopener noreferrer" aria-label="Open Rizal's Footsteps in a new tab">↗</a>
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><span>Interactive archive</span><span class="project-index">02</span></div>
+            <h3>Rizal’s Footsteps</h3>
+            <p>An interactive archive exploring the life and legacy of José Rizal through significant events and visual storytelling.</p>
+            <p class="project-stack">Interactive storytelling · Digital archive</p>
+            <a class="project-link" href="https://rizals-life.onrender.com" target="_blank" rel="noopener noreferrer">Visit live project <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card project-card--development">
+          <div class="project-preview project-preview--development">
+            <img
+              src="{{ url_for('static', filename='images/lost-boys-club-preview.png') }}"
+              alt="Screenshot of the Lost Boys Club landing and sign-in page"
+              loading="lazy"
+              decoding="async"
+            >
+            <a class="preview-open" href="https://lostboysclub.infinityfreeapp.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Lost Boys Club in a new tab">↗</a>
+          </div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-status"><span aria-hidden="true"></span> In development</span>
+              <span class="project-index">03</span>
+            </div>
+            <h3>Lost Boys Club</h3>
+            <p>This project is not finished yet and is currently in development.</p>
+            <a class="project-link" href="https://lostboysclub.infinityfreeapp.com/" target="_blank" rel="noopener noreferrer">Visit current version <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section-heading section-heading--row">
+        <div>
+          <p class="eyebrow">03 / Experience</p>
+          <h2>Selected work &amp; leadership</h2>
+        </div>
+      </div>
+      <div class="filters" role="group" aria-label="Filter experience">
+        <button class="filter active" type="button" data-filter="All" aria-pressed="true">All</button>
+        <button class="filter" type="button" data-filter="Backend & Spatial" aria-pressed="false">Backend &amp; Spatial</button>
+        <button class="filter" type="button" data-filter="Live AV & Broadcast" aria-pressed="false">Live AV &amp; Broadcast</button>
+        <button class="filter" type="button" data-filter="OJT & Ops" aria-pressed="false">OJT &amp; Ops</button>
+      </div>
+      <div class="experience-grid"></div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">04 / Capabilities</p>
+        <h2>Technical skill set</h2>
+      </div>
+      <div class="skills-grid"></div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="section-heading">
+        <p class="eyebrow">05 / Education</p>
+        <h2>Academic background</h2>
+      </div>
+      <div class="education-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Kierloyd Vince V. Schofield</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
+</body>
+</html>
